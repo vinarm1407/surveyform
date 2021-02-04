@@ -1,0 +1,76 @@
+<link rel="stylesheet" href="src/styles.css">
+<h1 id="title">Survey Form</h1>
+<p for="title" id="description"><strong>Hal apa yang ingin dilakukan saat liburan?</strong></p>
+
+	<form id="survey-form">
+			<div class="form-group">
+					<label id="name-label" for="name"><strong>Nama: </strong></label>
+					<input id="name" type="text" placeholder="masukkan nama lengkap">
+			</div>      
+		
+			<div class="form-group">
+					<label id="email-label" for="email"><strong>Email: </strong></label>
+					<input id="email" type="email" placeholder="masukkan email">
+			</div>
+	 
+			<div class="form-group">
+					<label id="number-label" for="number"><strong>Umur: </strong></label>
+					<input id="number" type="number" min="13" max="30" placeholder="ex: 21">
+			</div>
+	 
+			<div class="form-group">      
+					<label id="role-label" for="dropdown"><strong>Jenis Kelamin: </strong></label>
+					<select name="Jenis Kelamin" id="dropdown">
+							<option value="Pilih">Pilih</option>
+							<option value="Laki-laki">Laki-laki</option>
+							<option value="Perempuan">Perempuan</option>
+					</select>
+			</div>
+<br>    
+			<div class="form-group">       
+					<p><strong>Kegiatan apa yang ingin dilakukan saat liburan tiba?</strong></p>
+							<div class="input-group">
+									<label for="kemah"><input id="kemah" type="radio" value="kemah">Kemah</label>
+									<label for="medaki gunung"><input id="medaki gunung" type="radio" value="medaki gunung">Medaki Gunung</label>
+									<label for="berwisata"><input id="berwisata" type="radio" value="berwisata">Berwisata</label>
+									<label for="Pergi ke Pantai"><input id="pergi ke pantai" type="radio" value="pergi ke pantai">Pergi ke Pantai</label>
+									<label for="kuliner"><input id="kuliner" type="radio" value="kuliner" checked>Kuliner</label>
+									<label for="membantu orang tua"><input id="membantu orang tua" type="radio" value="membantu orang tua">Membantu Orang Tua</label>
+									<label for="di rumah saja"><input id="di rumah saja" type="radio" value="di rumah saja">Di Rumah saja</label>
+							</div>
+			</div>
+<br>
+			<div class="form-group">       
+					<p><strong>Jika bisa dilakukan, ingin berlibur dimana? </strong></p>
+							<div class="input-group">
+									<label for="kota"><input id="kota" type="checkbox" name="kota" value="banyuwangi">Banyuwangi</label>
+									<label for="kota"><input id="kota" type="checkbox" name="kota" value="bali">Bali</label>
+									<label for="kota"><input id="kota" type="checkbox" name="kota" value="jakarta">Jakarta</label>
+									<label for="kota"><input id="kota" type="checkbox" name="kota" value="bandung" checked>Bandung</label>
+									<label for="kota"><input id="kota" type="checkbox" name="kota" value="yogyakarta">Yogyakarta</label>
+									<label for="kota"><input id="kota" type="checkbox" name="kota" value="lombok">Lombok</label>
+									<label for="kota"><input id="kota" type="checkbox" name="kota" value="malang">Malang</label>
+									<label for="kota"><input id="kota" type="checkbox" name="kota" value="surabaya">Surabaya</label>
+									<label for="kota"><input id="kota" type="checkbox" name="kota" value="kediri">Kediri</label>
+									<label for="kota"><input id="kota" type="checkbox" name="kota" value="madura">Madura</label>
+							</div>
+			</div>
+<br>
+			<div>
+					<table>
+							<tbody>
+									<tr>
+											<td colspan="1"><strong>Komentar (Ceritakan secara singkat pengalaman liburanmu): </strong></td>
+									</tr>
+							</tbody>
+							<td colspan="1">
+									<input type="text" name="komentar" id="colspan" placeholder="masukkan komentar">
+							</td>
+					</table>
+			</div>
+
+<br>
+			<div class="form-group">
+					<input id="submit" class="button" type="submit" value="Submit">
+			</div>
+	</form>
